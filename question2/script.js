@@ -3,7 +3,6 @@
 let regexGreen = /false/;
 function loopResults(json) {
   const resultsElement = document.querySelector(".results");
-  console.log(json.length)
   for (let key in json) {
     // set output text for the div element inner html
     text = "<h1>" + "UserId: " + json[key].userId + "</h1>";
