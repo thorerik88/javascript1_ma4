@@ -10,9 +10,9 @@ function loopResults(json) {
     text += "<p>" + "title: " + json[key].title + "</p>";
     // set red color to "false" and green value to "true"
     if (regexGreen.exec(json[key].completed)) {
-      text += "<p>" + "completed: " + "<span class='red'>" + json[key].completed + "</span>" + "</p>";
+      text += "<p>completed: <span class='red'>" + json[key].completed + "</span></p>";
     } else {
-      text += "<p>" + "completed: " + "<span class='green'>" + json[key].completed + "</span>" + "</p>";
+      text += "<p>completed: <span class='green'>" + json[key].completed + "</span></p>";
     }
     // create a div element, add text and append to main div element
     let todo = document.createElement('div');
