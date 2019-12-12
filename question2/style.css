@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: inline-block;
+  text-align: center;
+}
+
+h1 {
+  padding-bottom: .2em;
+}
+
+h2, p {
+  padding: .4em;
+}
+
+button {
+  width: 90%;
+  padding: 1em;
+  font-size: 2em;
+  margin: .7em 0 2em;
+  cursor: pointer;
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section div {
+  margin: 1em auto;
+  padding: 1.5em;
+  width: 90%;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+div > :last-child:not(:only-child) {
+  padding: 0;
+}
+
+.green, .red {
+  color: white;
+  padding: 2px;
+}
+
+.green {
+  background: green;
+}
+
+.red {
+  background: red;
+}
+
+@media only screen and (min-width: 450px) {
+  section div {
+    width: 40%;
+    margin: 1em;
+    vertical-align: top;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  section {
+    width: 80%;
+  }
+
+  section div {
+    width: 30%;
+  }
+
+  button {
+    width: 50%;
+    padding: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  section {
+    width: 95%;
+  }
+
+  section div {
+    width: 20%;
+  }
+
+  button {
+    padding: 1em;
+  }
+}
